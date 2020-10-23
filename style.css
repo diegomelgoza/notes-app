@@ -1,0 +1,84 @@
+body {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 4.5vw;
+}
+
+h2 {
+  color: green;
+}
+
+.noteInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea {
+  margin-left: 10px;
+  width: 50%;
+  overflow-wrap: break-word;
+}
+
+#addNote {
+  font-size: 24px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.view {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #4c6baf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.deletes {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #b81919;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 3rem;
+}
+
+.card {
+  display: inline-block;
+  width: 20%;
+  margin: 1.66%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    display: grid;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .remove {
+    margin: 10px auto;
+    width: 25%;
+  }
+
+  .view {
+    display: none;
+  }
+}
